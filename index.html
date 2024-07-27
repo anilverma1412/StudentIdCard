@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Id Card</title>
+</head>
+<link rel="stylesheet" href="./styles/style.css">
+<body>
+    <div class="container">
+        <div class="box">
+            <h3 class="title">SVM Sen Sec School</h3>
+            <form>
+                <div class="image">
+                    <input type="file" id="image" name="file" accept="image/*">
+                </div>
+                <!-- <h4 class="card">Identity card</h4> -->
+                <div class="feilds">
+                    <label for="studentName">Student Name :-</label>
+                    <input id="studentName"/>
+                </div>
+                <div class="feilds">
+                    <label for="class"> Class :-</label>
+                    <input id="class"/>
+                </div>
+                <div class="feilds">
+                    <label for="rollNo"> Roll No. :-</label>
+                    <input id="rollNo"/>
+                </div>  
+                <div class="feilds">
+                    <label for="dob"> DOB :-</label>
+                    <input id="dob"/>
+                </div>
+                <div class="feilds">
+                    <label for="contactNo"> Contact No. :-</label>
+                    <input id="contactNo"/>
+                </div>
+                <div class="feilds">
+                    <!-- <button class="btn" type="button" onclick="clearform()">Clear</button> -->
+                    <button class="btn" type="reset">Clear</button>
+                    <button class="btn" type="button" onclick="submitcard()">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="box">
+            <h3 class="title">Student Id card</h3>
+            <div class="img">
+                <img src="anc.jpg" id="img2" alt="Student Image"/>
+            </div>
+            
+            <div class="feilds">
+                <label>Name :-</label>
+                <label id="nameVal">Sumit</label>
+            </div>
+            <div class="feilds">
+                <label>Class :-</label>
+                <label id="calssVal">10th</label>
+            </div>
+            <div class="feilds">
+                <label>Roll No. :-</label>
+                <label id="rollnoVal">24</label>
+            </div>
+            <div class="feilds">
+                <label>DOB :-</label>
+                <label id="dobVal">10.06.1997</label>
+            </div>
+            <div class="feilds">
+                <label>Contact no. :-</label>
+                <label id="contactVal">9876543210</label>
+            </div>
+            <div>
+                <button class="btn print" type="button" onclick="downloadPDF()">Print</button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/idcard.js"></script>
+</body>
+</html>
