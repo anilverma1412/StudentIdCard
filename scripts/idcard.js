@@ -8,3 +8,6 @@ function submitcard(){
 
    // console.log(stdNametxt,classtxt,rollNotxt,dobtxt,contactNotxt);
 }
+function printIdCard(){
+    window.print();
+}

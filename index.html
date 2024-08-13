@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="./styles/style.css">
 <body>
     <div class="container">
-        <div class="box">
+        <div class="box formInput">
             <h3 class="title">SVM Sen Sec School</h3>
             <form>
                 <div class="image">
@@ -33,17 +33,16 @@
                     <label for="contactNo"> Contact No. :-</label>
                     <input id="contactNo"/>
                 </div>
-                <div class="feilds">
-                    <!-- <button class="btn" type="button" onclick="clearform()">Clear</button> -->
+                <div class="buttonContainer">
                     <button class="btn" type="reset">Clear</button>
                     <button class="btn" type="button" onclick="submitcard()">Submit</button>
                 </div>
             </form>
         </div>
-        <div class="box">
+        <div class="box card">
             <h3 class="title">Student Id card</h3>
-            <div class="img">
-                <img src="anc.jpg" id="img2" alt="Student Image"/>
+            <div class="imageContainer">
+                <img src="./assets/image/my.jpeg" id="img2" alt="Student Image"/>
             </div>
             
             <div class="feilds">
@@ -66,8 +65,8 @@
                 <label>Contact no. :-</label>
                 <label id="contactVal">9876543210</label>
             </div>
-            <div>
-                <button class="btn print" type="button" onclick="downloadPDF()">Print</button>
+            <div class="buttonContainer">
+                <button class="btn print" type="button" onclick="printIdCard()">Print</button>
             </div>
         </div>
     </div>
